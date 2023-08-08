@@ -1,0 +1,4 @@
+# base requirements
+
+Django==4.2.3
+django-crum==0.7.9
