@@ -47,8 +47,6 @@ CACHES = {
 
 INSTALLED_APPS += ("debug_toolbar",)
 
-MIDDLEWARE += ("debug_toolbar.middleware.DebugToolbarMiddleware",)
-
 DEBUG_TOOLBAR_PATCH_SETTINGS = False
 
 INTERNAL_IPS = ("127.0.0.1",)
