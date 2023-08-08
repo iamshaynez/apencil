@@ -7,3 +7,9 @@ from apencil.api.views import (
     SignUpEndpoint,
     SignInEndpoint,
 )
+
+urlpatterns = [
+    # Auth
+    path("sign-up/", SignUpEndpoint.as_view(), name="sign-up"),
+    path("sign-in/", SignInEndpoint.as_view(), name="sign-in"),
+]
