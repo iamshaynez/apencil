@@ -17,7 +17,7 @@ DEBUG = int(os.environ.get("DEBUG", 1)) == 1
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.environ.get("PGUSER", "plane"),
+        "NAME": os.environ.get("PGUSER", "apencil"),
         "USER": "",
         "PASSWORD": "",
         "HOST": os.environ.get("PGHOST", "localhost"),

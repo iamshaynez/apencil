@@ -24,8 +24,8 @@ from sentry_sdk import capture_exception, capture_message
 from . import BaseAPIView
 from apencil.db.models import User
 from apencil.api.serializers import UserSerializer
-# from plane.settings.redis import redis_instance
-# from plane.bgtasks.magic_link_code_task import magic_link
+# from apencil.settings.redis import redis_instance
+# from apencil.bgtasks.magic_link_code_task import magic_link
 
 
 def get_tokens_for_user(user):

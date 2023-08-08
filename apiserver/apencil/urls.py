@@ -1,4 +1,4 @@
-"""plane URL Configuration
+"""apencil URL Configuration
 
 """
 
@@ -11,6 +11,6 @@ from django.conf import settings
 # from django.conf.urls.static import static
 
 urlpatterns = [
-    path("api/", include("plane.api.urls")),
+    path("api/", include("apencil.api.urls")),
 ]
 

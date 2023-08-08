@@ -2,6 +2,7 @@
 
 from __future__ import absolute_import
 
+import os
 import dj_database_url
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
@@ -16,7 +17,7 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 # DATABASES = {
 #     "default": {
 #         "ENGINE": "django.db.backends.postgresql",
-#         "NAME": os.environ.get("PGUSER", "plane"),
+#         "NAME": os.environ.get("PGUSER", "apencil"),
 #         "USER": "",
 #         "PASSWORD": "",
 #         "HOST": os.environ.get("PGHOST", "localhost"),
@@ -26,7 +27,7 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': os.path.join('BASE_DIR' , 'db.sqlite3'),
     }
 }
 
@@ -44,8 +45,6 @@ CACHES = {
         "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
     }
 }
-
-INSTALLED_APPS += ("debug_toolbar",)
 
 DEBUG_TOOLBAR_PATCH_SETTINGS = False
 
