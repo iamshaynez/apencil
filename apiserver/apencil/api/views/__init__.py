@@ -5,3 +5,12 @@ from .authentication import (
     SignInEndpoint,
     SignOutEndpoint,
 )
+
+from .user import (
+    UserEndpoint,
+)
+
+from .book import (
+    BookViewSet,
+)
+
