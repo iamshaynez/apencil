@@ -7,6 +7,10 @@ from .authentication import (
 )
 
 from .user import (
-    UserEndpoint
+    UserEndpoint,
+)
+
+from .book import (
+    BookViewSet,
 )
 

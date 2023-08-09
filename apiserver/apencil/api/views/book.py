@@ -57,13 +57,15 @@ class BookViewSet(BaseViewSet):
     model = Book
     serializer_class = BookSerializer
 
-    filterset_fields = [
-        "owner",
-    ]
+    # filterset_fields = [
+    #     "owner",
+    # ]
 
     def get_queryset(self):
         return (
-            self.filter_queryset(super().get_queryset().select_related("owner"))
+            self.filter_queryset(super().get_queryset()
+            #.select_related("owner")
+            )
             .order_by("name")
         )
 
