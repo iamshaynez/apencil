@@ -5,3 +5,8 @@ from .authentication import (
     SignInEndpoint,
     SignOutEndpoint,
 )
+
+from .user import (
+    UserEndpoint
+)
+
